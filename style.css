@@ -1052,6 +1052,32 @@ nav ul li a:hover {
   background: #35424a;
   color: #f4f4f4;
 }
+.subBTN{
+  -moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));
+	background:-moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0',GradientType=0);
+	background-color:#3d94f6;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+  border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
 
 .button a {
   color: #00b0f0;
@@ -1090,8 +1116,10 @@ nav ul li a:hover {
 div #mc_embed_signup_scroll >h1{
   font-size:36px;
   padding-top: 5rem;
-  color:#333;
-  text-shadow: 3px 3px 3px #f4f4f4;
+  color: #333333;
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.562), 5px 4px 0px rgba(0,0,0,0.15);
+  color: #333333;
+  
   
 }
 .mc-field-group{
@@ -1144,10 +1172,111 @@ div .clear{
   float: left;
   width: 100%;
 }
+/*Model*/
+a:link,
+  a:visited{
+   text-decoration: none;
+  }
+  .modal{
+   background-color: rgba(0,0,0, .8);
+   width:100%;
+   height: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .5s;
+  }
+  .modal__content{
+   width: fit-content;
+   height: fit-content;
+   background-image: url("img/man-hands-reading-boy.jpg");
+   background-repeat: repeat;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   padding-top: 1px;
+   transform: translate(-50%, -50%);
+   border-radius: 1em;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .5s;
+  }
+  #modal:target{
+   opacity: 1;
+   visibility: visible;
+  }
+  #modal:target .modal__content{
+   opacity: 1;
+   visibility: visible;
+  }
+  .modal__close{
+   color: #363636;
+   font-size: 5em;
+   float: right;
+   padding: 10px;
+  }
+  .modal__close:hover{
+    color: #00b0f0;
+    cursor:pointer;
+  }
+  
+.modal-open{
+ display: inline-block;
+ color: dodgerblue;
+ margin: 2em;
+}
+div #mc_embed_signup_scroll_model >h1{
+  font-size:36px;
+  padding-top: 1rem;
+  color:#333;
+  text-shadow: 3px 3px 3px #f4f4f4;
+  
+}
+.mc-field-group_model{
+  padding:2px;
+}
+div .mc-field-group_model >input{
+  font-size:20px;
+  background:#333;
+  padding: 5px 10px;
+  color:#f4f4f4;
+  margin-right: auto;
+  text-decoration:none;
+  border-radius: 5px;
+     
+}
+
+div .mc-field-group_model > label{
+  font-size:20px;
+  background :#333;
+  padding: 5px 10px;
+  color:#f4f4f4;
+  margin-right: 10px;
+  text-decoration:none;
+  border-radius: 5px;
+  
+}
+div .clear_model{
+  padding-top:1px;
+  padding-bottom: 20px;
+}
+.clear_model > input{
+  font-size:20px;
+  background:#333;
+  padding: 15px 90px;
+  color:#f4f4f4;
+  text-decoration:none;
+  border-radius: 20px;
+}
 /*Footer*/
 footer {
   padding: 1.8rem;
 }
+
+  
 
 footer p {
   margin: 0;
@@ -1227,13 +1356,48 @@ footer p {
     padding: 1.2rem 1rem;
   }
   
-  .modal-content{
+  .modal__content{
     width: 80%;
     margin-top: 20%;
+    top: 30%;
   }
-    .clear > input{
-    padding: 15px 70px;
-    }
+  .mc-field-group_model{
+    padding:2px;
+  }
+  div .mc-field-group_model >input{
+    font-size:20px;
+    background:#333;
+    padding: 2px 2px;
+    color:#f4f4f4;
+    margin-right: auto;
+    text-decoration:none;
+    border-radius: 5px;
+       
+  }
+  
+  div .mc-field-group_model > label{
+    font-size:20px;
+    background :#333;
+    padding: 2px 2px;
+    color:#f4f4f4;
+    margin-right: 10px;
+    text-decoration:none;
+    border-radius: 5px;
+    
+  }
+  div .clear_model{
+    padding-top:1px;
+    padding-bottom: 2px;
+  }
+  .clear_model > input{
+    font-size:20px;
+    background:#333;
+    padding: 15px 60px;
+    color:#f4f4f4;
+    text-decoration:none;
+    border-radius: 20px;
+  }
+
   }
  
 
