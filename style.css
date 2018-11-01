@@ -57,6 +57,7 @@ nav ul li a:hover {
 
 }
 
+
 .menu-icon {
   line-height: 5px;
   width: 100%;
@@ -140,6 +141,16 @@ nav ul li a:hover {
   color: #ffffff;
   float: left;
   width: 100%;
+}
+.contactUSBG{
+  background-attachment: fixed !important;
+  background-image: url("img/contactBG.jpeg");
+  background-repeat: repeat;
+  background-size: cover;
+  color: #ffffff;
+  float: left;
+  width: 960px ;
+
 }
 .aboutBG {
   background-attachment: fixed !important;
@@ -970,6 +981,10 @@ nav ul li a:hover {
   cursor: pointer;
 
 }
+
+
+
+
 .fbox:hover{
   border: 3px solid rgb(173, 171, 171);
 
@@ -990,6 +1005,7 @@ nav ul li a:hover {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
+
 }
 
 .grid-3 {
